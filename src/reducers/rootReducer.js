@@ -4,7 +4,7 @@ const initialState = {
   requesting: false
 }
 
-const rootReducer = (state, action) => {
+const rootReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'LOADING_STORES':
       return {
@@ -34,3 +34,5 @@ const rootReducer = (state, action) => {
       return state
   }
 }
+
+export default rootReducer
