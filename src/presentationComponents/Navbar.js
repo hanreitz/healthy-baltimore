@@ -3,7 +3,11 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-      <h1>Navbar</h1>
+      <nav>
+        <a href='#'>Home</a>
+        <a href='#'>About</a>
+        <a href='#'>Find a Store</a>
+      </nav>
     </>
   )
 }
