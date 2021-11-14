@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Assistance = () => {
+const Resources = () => {
   return (
     <div>
       <h1>Find Assistance</h1>
@@ -225,4 +225,4 @@ const Assistance = () => {
   )
 }
 
-export default Assistance;
+export default Resources;

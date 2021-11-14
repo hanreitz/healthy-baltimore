@@ -13,7 +13,22 @@ class MapContainer extends Component {
 
     return (
       <div>
-        <Map />
+        <Map
+          id="myMap"
+          options={{
+            center: { lat: 39.2904, lng: -76.6122 },
+            zoom: 14
+          }}
+          onMapLoad={map => {
+            const markers = this.props.stores.map(store => {
+              return new window.google.maps.Marker({
+                position: { lat: store.attributes.latitude, lng: store.attributes.longitude },
+                map: map,
+                title: store.attributes.storename
+              })
+            })
+          }}
+        />
       </div>
     )
   }
