@@ -190,15 +190,37 @@ const Assistance = () => {
           <p>Phone: (410) 462-5864</p>
         </div>
       
-      <h2>Food Assistance Programs</h2>
+      <h2>Local Food Assistance Programs</h2>
 
         <a href="https://dhs.maryland.gov/supplemental-nutrition-assistance-program/applying-for-the-food-supplement-program/"><button>DHS SNAP Benefits</button></a>
 
         <a href="https://coronavirus.baltimorecity.gov/food-distribution-sites"><button>Baltimore City </button></a>
 
-      <a href="https://dhs.maryland.gov/bureau-special-grants/tefap/"><button>Emergency Food Assistance Program</button></a>
+        <a href="https://dhs.maryland.gov/bureau-special-grants/tefap/"><button>Emergency Food Assistance Program</button></a>
 
-      <a href="https://www.benefits.gov/benefit/1276"><button>Maryland Food Supplement Program</button></a>
+        <a href="https://www.benefits.gov/benefit/1276"><button>Maryland Food Supplement Program</button></a>
+
+      <h2>Resources for Making Budget-Friendly, Healthy Meals</h2>
+
+        <h3>Rescipe Resources</h3>
+          <ul>
+            <li>
+              <a href='https://www.mannafoodbank.org/agency-access-and-information/recipes/'>Manna Food Bank Recipe Book</a>
+            </li>
+            <li>
+              <a href='https://hungerandhealth.feedingamerica.org/healthy-recipes/'>Feeding America: Healthy Rescipes</a>
+            </li>
+            <li>
+              <a href='https://www.capitalareafoodbank.org/what-we-do/nutrition-and-wellness/recipes/'>Capital Area Food Bank: Recipes</a>
+            </li>
+            <li>
+              <a href='http://www.northeastiowafoodbank.org/wp-content/uploads/2015/06/The-Food-Pantry-Cookbook.pdf'>The Food Pantry Cookbook</a>
+            </li>
+            <li>
+              <a href='https://www.budgetbytes.com/pantry-recipes/'>Budget Bytes: 15 Pantry Staple Recipes</a>
+            </li>
+          </ul>
+
     </div>
   )
 }

@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.headerContainer {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  max-width: 100%;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 2px -2px #00000010;
+          box-shadow: 0 4px 2px -2px #00000010;
+}
+
+.headerContainer .headerButton {
+  cursor: pointer;
+}
+
+.headerContainer .headerButton button {
+  display: block;
+  margin: 0px 10px 0px 10px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: white;
+  font-family: 'Alegreya', serif;
+  font-size: 25px;
+  color: #008b98;
+}
+
+.headerContainer .searchInput {
+  width: 100%;
+  background-color: #ebebeb;
+  height: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 2px #bebebe;
+          box-shadow: inset 0 0 2px #bebebe;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContainer .searchInput .locationIcon {
+  margin-right: 10px;
+  color: #008b98;
+  font-size: 20px;
+}
+
+.headerContainer .searchInput input {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #434343;
+  font-size: 17px;
+  border: none;
+  display: block;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headerContainer .searchInput input:focus {
+  outline-width: 0;
+}
+
+.footerContainer {
+  z-index: 1;
+  height: 64px;
+  width: 100vw;
+  max-width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-box-shadow: 0 -4px 2px -2px #00000010;
+          box-shadow: 0 -4px 2px -2px #00000010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #008b98;
+  font-size: 20px;
+}
+
+.footerContainer .footerFilter {
+  margin-left: 10px;
+}
+
+.footerContainer .footerLogo {
+  width: 100%;
+  height: 75%;
+  background-image: url("../images/HealthyBaltimoreLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.footerContainer .footerResources {
+  margin-right: 10px;
+}
+
+.google-map {
+    width: 100vw;
+}
+/*# sourceMappingURL=styles.css.map */
