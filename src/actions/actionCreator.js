@@ -12,6 +12,6 @@ export const getStores = () => {
   }
 }
 
-const getLocation = () => {
-  // get user's location, not sure how this works yet
+const getMap = () => {
+  // get map from google
 }

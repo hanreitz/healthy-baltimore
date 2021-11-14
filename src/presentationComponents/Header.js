@@ -3,7 +3,10 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-      <h2>Header Component</h2>
+      <nav className="headerContainer">
+        <button className="header">List</button>
+        <div className="searchInput"><input></input></div>
+      </nav>
     </>
   )
 }
