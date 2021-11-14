@@ -4,10 +4,14 @@ import { getStores } from '../actions/actionCreator'
 import Map from '../presentationComponents/Map'
 
 class MapContainer extends Component {
+  state = {
+    location: ''
+  }
 
   componentDidMount(){
     this.props.getStores()
   }
+
 
   render() {
 
