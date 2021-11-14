@@ -183,11 +183,22 @@ table {
   margin: 0px 10px 0px 10px;
 }
 
+.footerContainer .footerLogo a .innerLogo {
+  width: 100%;
+  height: 100%;
+}
+
 .footerContainer .footerResources {
   margin-right: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #008b98;
+}
+
 .filterContainer {
+  z-index: 1;
   position: fixed;
   bottom: 64px;
   margin: 0px 0px 10px 10px;
@@ -236,5 +247,196 @@ table {
   margin-right: 10px;
   -webkit-box-shadow: inset 0 0 3px #bebebe;
           box-shadow: inset 0 0 3px #bebebe;
+}
+
+.resourcesContainer {
+  margin: 74px 10px 74px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resourcesContainer .resourcesAssistancePrograms {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.resourcesContainer .resourcesAssistancePrograms h2 {
+  color: #008b98;
+  font-size: 30px;
+  font-family: 'Alegreya', serif;
+  padding-bottom: 10px;
+}
+
+.resourcesContainer .resourcesAssistancePrograms button {
+  cursor: pointer;
+  background-color: #ff940a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 0px 5px 10px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
+.resourcesContainer .resourcesAssistancePrograms button:hover {
+  background-color: #ffc72f;
+}
+
+.resourcesContainer .resourcesAssistancePrograms hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesMealsAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resourcesContainer .resourcesMealsAbout h2 {
+  color: #008b98;
+  font-size: 30px;
+  font-family: 'Alegreya', serif;
+  padding-bottom: 10px;
+}
+
+.resourcesContainer .resourcesMealsAbout li {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #ff940a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 0px 5px 10px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
+.resourcesContainer .resourcesMealsAbout li a {
+  color: white;
+  text-decoration: none;
+}
+
+.resourcesContainer .resourcesMealsAbout li:hover {
+  background-color: #ffc72f;
+}
+
+.resourcesContainer .resourcesMealsAbout hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance h2 {
+  color: #008b98;
+  font-size: 30px;
+  font-family: 'Alegreya', serif;
+  padding-bottom: 10px;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance p {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Alegreya', serif;
+  margin-bottom: 20px;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance .fb-info-container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Alegreya', serif;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance .fb-info-container p {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Alegreya', serif;
+  margin-bottom: 0px;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance .fb-info-container button {
+  cursor: pointer;
+  max-width: 95vw;
+  width: 500px;
+  display: inline-block;
+  background-color: #ff940a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 10px 5px 20px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance .fb-info-container button:hover {
+  background-color: #ffc72f;
+}
+
+.resourcesContainer .resourcesAssistanceMealsAbout .resourcesAssistance .fb-info-container .lastChild {
+  margin-bottom: 20px;
+}
+
+.resourcesContainer .resourcesAbout button {
+  border: none;
+  max-width: 95vw;
+  display: inline-block;
+  background-color: #008b98;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin: 10px 5px 20px 5px;
+  padding: 20px 20px 20px 20px;
+}
+
+.resourcesContainer .resourcesAbout button:hover {
+  background-color: #0eb1b3;
+}
+
+.aboutContainer {
+  margin: 74px 10px 10px 10px;
+  font-family: 'Alegreya', serif;
+}
+
+.aboutContainer h2 {
+  color: #008b98;
+  font-size: 30px;
+  font-family: 'Alegreya', serif;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

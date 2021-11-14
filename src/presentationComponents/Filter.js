@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux'
+import { addFilter, removeFilter } from '../actions/actionCreator'
 
 class Filter extends Component {
     constructor(props) {
@@ -18,11 +19,11 @@ class Filter extends Component {
             if (this.state[`check${currentEl}`] === "checkmark") {
                 this.setState({
                     [`check${currentEl}`]: "checkmarkChecked"
-                }, () => {console.log(this.state)})
+                }, addFilter(currentEl))
             } else {
                 this.setState({
                     [`check${currentEl}`]: "checkmark"
-                }, () => {console.log(this.state)})
+                }, removeFilter(currentEl))
             }
         }
     }
@@ -56,6 +57,13 @@ class Filter extends Component {
       }
     
   }
+
+  const mapDispatchToProps = dispatch => {
+    return {
+      addFilter: filter => dispatch(addFilter(filter)),
+      removeFilter: filter => dispatch(removeFilter(filter))
+    }
+  }
   
-  export default Filter
+  export default connect(null, mapDispatchToProps)(Filter)
   

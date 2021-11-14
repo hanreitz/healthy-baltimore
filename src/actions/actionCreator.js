@@ -12,6 +12,16 @@ export const getStores = () => {
   }
 }
 
-const getMap = () => {
-  // get map from google
+export const addFilter = filter => {
+  return ({
+    type: 'ADD_FILTER',
+    filter: filter
+  })
+}
+
+export const removeFilter = filter => {
+  return ({
+    type: 'REMOVE_FILTER',
+    filter: filter
+  })
 }

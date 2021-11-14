@@ -5,7 +5,9 @@ import Header from './presentationComponents/Header'
 import About from './presentationComponents/About'
 import Resources from './presentationComponents/Resources'
 import Footer from './presentationComponents/Footer'
-import Main from './containers/Main';
+import MapContainer from './containers/MapContainer';
+import List from './presentationComponents/List'
+
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
       <Header />
       <Footer />
       <Switch>
-        <Route exact path='/' component={Main} />
+        <Route exact path='/' component={MapContainer} />
+        <Route path='/list' component={List} />
         <Route path='/about' component={About} />
         <Route path='/resources' component={Resources} />
       </Switch>

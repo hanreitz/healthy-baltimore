@@ -1,4 +1,3 @@
-// pinned locations here
 import React, { Component } from 'react';
 
 class Map extends Component {
@@ -18,10 +17,10 @@ class Map extends Component {
     if (!window.google) {
       var s = document.createElement('script');
       s.type = 'text/javascript';
-      s.src = `https://maps.google.com/maps/api/js?key=YOUR_API_KEY`;
+      s.src = `https://maps.google.com/maps/api/js?key=AIzaSyDxZ9Prv82PYE_gCNNhMBMppjLWk5ZNeqQ`;
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
-      s.addEventListener('load', e => {
+      s.addEventListener('load', () => {
         this.onScriptLoad()
       })
     } else {
@@ -31,7 +30,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div style={{ width: '100vw', height: '100vh' }} id={this.props.id} />
+      <div style={{ width: '100vw', height: 'calc(100vh - 128px)', marginTop: '64px' }} id={this.props.id} />
     );
   }
 }
