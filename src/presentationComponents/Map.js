@@ -20,7 +20,7 @@ class Map extends Component {
       s.src = `https://maps.google.com/maps/api/js?key=AIzaSyDxZ9Prv82PYE_gCNNhMBMppjLWk5ZNeqQ`;
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
-      s.addEventListener('load', () => {
+      s.addEventListener('load', (e) => {
         this.onScriptLoad()
       })
     } else {
